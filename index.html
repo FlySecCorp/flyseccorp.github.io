@@ -20,42 +20,42 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Laila:wght@600&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Laila:wght@500&display=swap" rel="stylesheet">
-
-        <script type="text/javascript">
-  +function(a,p,P,b,y){a.braze={};a.brazeQueue=[];for(var s="BrazeSdkMetadata DeviceProperties Card Card.prototype.dismissCard Card.prototype.removeAllSubscriptions Card.prototype.removeSubscription Card.prototype.subscribeToClickedEvent Card.prototype.subscribeToDismissedEvent Card.fromContentCardsJson ImageOnly CaptionedImage ClassicCard ControlCard ContentCards ContentCards.prototype.getUnviewedCardCount Feed Feed.prototype.getUnreadCardCount ControlMessage InAppMessage InAppMessage.SlideFrom InAppMessage.ClickAction InAppMessage.DismissType InAppMessage.OpenTarget InAppMessage.ImageStyle InAppMessage.Orientation InAppMessage.TextAlignment InAppMessage.CropType InAppMessage.prototype.closeMessage InAppMessage.prototype.removeAllSubscriptions InAppMessage.prototype.removeSubscription InAppMessage.prototype.subscribeToClickedEvent InAppMessage.prototype.subscribeToDismissedEvent InAppMessage.fromJson FullScreenMessage ModalMessage HtmlMessage SlideUpMessage User User.Genders User.NotificationSubscriptionTypes User.prototype.addAlias User.prototype.addToCustomAttributeArray User.prototype.addToSubscriptionGroup User.prototype.getUserId User.prototype.getUserId User.prototype.incrementCustomUserAttribute User.prototype.removeFromCustomAttributeArray User.prototype.removeFromSubscriptionGroup User.prototype.setCountry User.prototype.setCustomLocationAttribute User.prototype.setCustomUserAttribute User.prototype.setDateOfBirth User.prototype.setEmail User.prototype.setEmailNotificationSubscriptionType User.prototype.setFirstName User.prototype.setGender User.prototype.setHomeCity User.prototype.setLanguage User.prototype.setLastKnownLocation User.prototype.setLastName User.prototype.setPhoneNumber User.prototype.setPushNotificationSubscriptionType InAppMessageButton InAppMessageButton.prototype.removeAllSubscriptions InAppMessageButton.prototype.removeSubscription InAppMessageButton.prototype.subscribeToClickedEvent FeatureFlag FeatureFlag.prototype.getStringProperty FeatureFlag.prototype.getNumberProperty FeatureFlag.prototype.getBooleanProperty automaticallyShowInAppMessages destroyFeed hideContentCards showContentCards showFeed showInAppMessage deferInAppMessage toggleContentCards toggleFeed changeUser destroy getDeviceId getDeviceId initialize isPushBlocked isPushPermissionGranted isPushSupported logCardClick logCardDismissal logCardImpressions logContentCardImpressions logContentCardClick logCustomEvent logFeedDisplayed logInAppMessageButtonClick logInAppMessageClick logInAppMessageHtmlClick logInAppMessageImpression logPurchase openSession requestPushPermission removeAllSubscriptions removeSubscription requestContentCardsRefresh requestFeedRefresh refreshFeatureFlags requestImmediateDataFlush enableSDK isDisabled setLogger setSdkAuthenticationSignature addSdkMetadata disableSDK subscribeToContentCardsUpdates subscribeToFeedUpdates subscribeToInAppMessage subscribeToSdkAuthenticationFailures toggleLogging unregisterPush wipeData handleBrazeAction subscribeToFeatureFlagsUpdates getAllFeatureFlags logFeatureFlagImpression".split(" "),i=0;i<s.length;i++){for(var m=s[i],k=a.braze,l=m.split("."),j=0;j<l.length-1;j++)k=k[l[j]];k[l[j]]=(new Function("return function "+m.replace(/\./g,"_")+"(){window.brazeQueue.push(arguments); return true}"))()}window.braze.getDeferredInAppMessage=function(){return new window.braze.InAppMessage};window.braze.getCachedContentCards=function(){return new window.braze.ContentCards};window.braze.getCachedFeed=function(){return new window.braze.Feed};window.braze.getUser=function(){return new window.braze.User};window.braze.getFeatureFlag=function(){return new window.braze.FeatureFlag};(y=p.createElement(P)).type='text/javascript';
-    y.src='https://js.appboycdn.com/web-sdk/5.0/braze.min.js';
-    y.async=1;(b=p.getElementsByTagName(P)[0]).parentNode.insertBefore(y,b)
-  }(window,document,'script');
-</script>
-
-<script>
-    // initialize the SDK
-braze.initialize('334bfd56-ea75-4491-8c76-53aeee07bf36', {
-    baseUrl: "https://security-testing-env-api.k8s.test-001.d-usw-2.braze.com"
-});
-
-// optionally show all in-app messages without custom handling
-braze.automaticallyShowInAppMessages();
-
-// if you use Content Cards
-braze.subscribeToContentCardsUpdates(function(cards){
-    // cards have been updated
-});
-
-// optionally set the current user's external ID before starting a new session
-// you can also call `changeUser` later in the session after the user logs in
-if (isLoggedIn){
-    braze.changeUser(userIdentifier);
-}
-
-// `openSession` should be called last - after `changeUser` and `automaticallyShowInAppMessages`
-braze.openSession();
-</script>
-
-        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Laila:wght@500&display=swap" rel="stylesheet">
+    
     </head>
+
+<style type="text/css">
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .logo-container {
+      white-space: nowrap;
+      animation: marquee 35s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .logo-container img {
+      display: inline-block;
+      margin: 0 30px;
+      max-height: 80px; /* Adjust the height as needed */
+    }
+
+    .img-project-logo{
+        width:10%;
+    }
+</style>
+
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -73,7 +73,9 @@ braze.openSession();
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://blogs.flyseccorp.com" target="_blank">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Join Us</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -86,19 +88,91 @@ braze.openSession();
                 <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
             </div>
         </header>
+
+        <section class="page-section" id="projects">
+            <div class="container" style="max-width: 100%">
+                <div class="text-center">
+                    <h3 class="section-heading text-uppercase">Projects we secured</h3>
+                    <h3 class="section-subheading text-muted">These are projects for which we have submitted valid reports.</h3>
+                </div>
+                <div class="row align-items-center">
+                    <div class="marquee">
+                        <div class="logo-container" style="white-space: nowrap;">
+                            <img class="img-project-logo" src="./logos/1password.png">
+                            <img class="img-project-logo" src="./logos/omise.png">
+                            <img class="img-project-logo" src="./logos/ClickHouse.png">
+                            <img class="img-project-logo" src="./logos/adobe.png">
+                            <img class="img-project-logo" src="./logos/allegion.png">
+                            <img class="img-project-logo" src="./logos/amazon.png">
+                            <img class="img-project-logo" src="./logos/blockchain.png">
+                            <img class="img-project-logo" src="./logos/brave.png">
+                            <img class="img-project-logo" src="./logos/bugcrowd.png">
+                            <img class="img-project-logo" src="./logos/clario.png">
+                            <img class="img-project-logo" src="./logos/cloudinary.png">
+                            <img class="img-project-logo" src="./logos/consensys.png">
+                            <img class="img-project-logo" src="./logos/cornershop.png">
+                            <img class="img-project-logo" src="./logos/creditkarma.png">
+                            <img class="img-project-logo" src="./logos/datastax.png">
+                        </div>
+                        <div class="logo-container" style="white-space: nowrap; margin-left: 100px;">
+                            <img class="img-project-logo" src="./logos/dod.png">
+                            <img class="img-project-logo" src="./logos/eazebi.png">
+                            <img class="img-project-logo" src="./logos/exness.png">
+                            <img class="img-project-logo" src="./logos/exodus.png">
+                            <img class="img-project-logo" src="./logos/fontegg.png">
+                            <img class="img-project-logo" src="./logos/ford.png">
+                            <img class="img-project-logo" src="./logos/front.png">
+                            <img class="img-project-logo" src="./logos/glassdoor.png">
+                            <img class="img-project-logo" src="./logos/grammarly.png">
+                            <img class="img-project-logo" src="./logos/hackerone.png">
+                            <img class="img-project-logo" src="./logos/helium.png">
+                            <img class="img-project-logo" src="./logos/indeed.png">
+                            <img class="img-project-logo" src="./logos/instavcart.png">
+                            <img class="img-project-logo" src="./logos/keeper.png">
+                            <img class="img-project-logo" src="./logos/mailru.png">
+                        </div>
+                        <div class="logo-container" style="white-space: nowrap; margin-right: 100px;">
+                            <img class="img-project-logo" src="./logos/malwarebytes.png">
+                            <img class="img-project-logo" src="./logos/mongodb.png">
+                            <img class="img-project-logo" src="./logos/mozilla.png">
+                            <img class="img-project-logo" src="./logos/nicehash.png">
+                            <img class="img-project-logo" src="./logos/nord.png">
+                            <img class="img-project-logo" src="./logos/8x8.png">
+                            <img class="img-project-logo" src="./logos/onetrust.png">
+                            <img class="img-project-logo" src="./logos/optimizely.png">
+                            <img class="img-project-logo" src="./logos/qiwi.png">
+                            <img class="img-project-logo" src="./logos/reddit.png">
+                            <img class="img-project-logo" src="./logos/sentry.png">
+                            <img class="img-project-logo" src="./logos/shipt.png">
+                            <img class="img-project-logo" src="./logos/shopify.png">
+                            <img class="img-project-logo" src="./logos/slack.png">
+                            <img class="img-project-logo" src="./logos/sony.png">
+                            <img class="img-project-logo" src="./logos/spotify.png">
+                            <img class="img-project-logo" src="./logos/stripe.png">
+                            <img class="img-project-logo" src="./logos/tmobile.png">
+                            <img class="img-project-logo" src="./logos/twilio.png">
+                            <img class="img-project-logo" src="./logos/waltdisnep.png">
+                            <img class="img-project-logo" src="./logos/yahoo.png">
+                            <img class="img-project-logo" src="./logos/zendesk.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Team-->
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">We are Security Researchers, desire to Seek for Security Issues in your Cyber Assets. FlySec try our best to saving the internet ! </h3>
+                    <h3 class="section-subheading text-muted">We are vulnerability researchers, looking for security issues for your application, your organization</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
                             <h4>ThaiVu</h4>
-                            <p class="text-muted">Security Researchers</p>
+                            <p class="text-muted">Security Researcher</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/thaivd98" target="_blank" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="https://hackerone.com/thaivu" target="_blank" aria-label="Parveen Anand Hackerone Profile"><i class="fa-solid fa-user-shield"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
@@ -108,7 +182,7 @@ braze.openSession();
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
                             <h4>Pt200</h4>
-                            <p class="text-muted">Security Researchers</p>
+                            <p class="text-muted">Security Researcher</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/_pt200"  target="_blank"aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="https://hackerone.com/pt200" target="_blank" aria-label="Diana Petersen Facebook Profile"><i class="fa-solid fa-user-shield"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
@@ -157,11 +231,12 @@ braze.openSession();
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">We are Security Researchers, desire to Seek for Security Issues in your Cyber Assets. FlySec try our best to saving the internet !</p></div>
-                </div>
+<!--                 <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">We are vulnerability researchers, looking for security issues for your application, your organization.</p></div>
+                </div> -->
             </div>
         </section>
+
 
         <div >
 
@@ -308,6 +383,7 @@ braze.openSession();
                     </div>
                 </section>
                 <!-- About-->
+
            
             <section class="page-section" id="about">
                 <div class="container">
@@ -323,7 +399,7 @@ braze.openSession();
                                     <h4>Nov 2020</h4>
                                     <h4 class="subheading">This is our first time working together as a team</h4>
                                 </div>
-                                <div class="timeline-body"><p class="text-muted">We met at the cafe and got the first bug bounty in 30 minutes after submitting for <a href="https://hackerone.com/8x8-bounty/thanks" target="_blank">8x8-bounty</a>, it was amazing!</p></div>
+                                <div class="timeline-body"><p class="text-muted">We met at the cafe and got the first bug bounty 30 minutes after submitting for <a href="https://hackerone.com/8x8-bounty/thanks" target="_blank">8x8-bounty</a>, it was amazing!</p></div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
@@ -333,7 +409,7 @@ braze.openSession();
                                     <h4>2021</h4>
                                     <h4 class="subheading">We're still here but the number of members has changed a lot</h4>
                                 </div>
-                                <div class="timeline-body"><p class="text-muted">Being a bug bounty hunter is not easy, stable and always is a controversy topic, so some members have their own directions.</p></div>
+                                <div class="timeline-body"><p class="text-muted">Being a bugbounty hunter is really not an easy job, so some members have their own directions.</p></div>
                             </div>
                         </li>
                         <li>
@@ -343,7 +419,7 @@ braze.openSession();
                                     <h4>2022</h4>
                                     <h4 class="subheading">We start to operate professionally periodically</h4>
                                 </div>
-                                <div class="timeline-body"><p class="text-muted">We started to operate more professionally. Having a clear working time, space, target, and established rules helps make operations more effective.</p></div>
+                                <div class="timeline-body"><p class="text-muted">We started to operate more professionally. Having a clear time, location, target, and established rules helps make operations more effective.</p></div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
@@ -353,7 +429,7 @@ braze.openSession();
                                     <h4>Feb 2023</h4>
                                     <h4 class="subheading">Flysec created</h4>
                                 </div>
-                                <div class="timeline-body"><p class="text-muted">At this time, the name Flysec was coined, “Fly” simply means flying higher and farther, “Sec” is Security in Cyber Security.</p></div>
+                                <div class="timeline-body"><p class="text-muted">This is when the name Flysec was coined, “fly” means flying higher and farther, “sec” means cypher security.</p></div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
@@ -370,8 +446,6 @@ braze.openSession();
                     </ul>
                 </div>
             </section>
-
-
             
             <!-- Clients-->
             <div class="py-5">
@@ -701,10 +775,7 @@ braze.openSession();
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
