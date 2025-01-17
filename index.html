@@ -251,7 +251,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img id="show_hidden" class="mx-auto rounded-circle" src="assets/img/team/6.jpg" alt="..." />
+                            <img id="show_hidden" class="mx-auto rounded-circle" src="assets/img/team/6.jpg" alt="..." onclick=show_hidden() />
                             <h4>Team Members</h4>
                             <p class="text-muted">Security Researcher</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
@@ -872,3 +872,10 @@
 <script src="https://sdk.pushy.me/web/1.0.22/pushy-service-worker.js"></script>
 
 <link rel="manifest" href="/manifest.json" />
+
+<script>
+    function show_hidden(){
+        const hiddenElements = document.querySelectorAll('[id^="hidden_"]');
+        hiddenElements.forEach(element => {element.style.display = '';});
+    }
+</script>
